@@ -8,4 +8,7 @@ import (
 func HomeRoutes(route fiber.Router) {
 	route.Get("/", controller.HomePage)
 	route.Get("/about", controller.AboutPage)
+	route.Get("/blog", controller.BlogPage)
+	route.Get("/contact", controller.ContactPage)
+	route.Get("/services", controller.ServPage)
 }
