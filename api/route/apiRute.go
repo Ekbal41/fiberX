@@ -1,7 +1,7 @@
 package apiroute
 
 import (
-	apihandler "github.com/ekbal41/fiberX/v1/api/handler"
+	apihandler "github.com/ekbal41/fiberX/api/handler"
 	"github.com/gofiber/fiber/v2"
 )
 

@@ -5,10 +5,10 @@ import (
 	"log"
 	"net/http"
 
-	apiroute "github.com/ekbal41/fiberX/v1/api/route"
-	approute "github.com/ekbal41/fiberX/v1/app/route"
-	"github.com/ekbal41/fiberX/v1/detabase"
-	"github.com/ekbal41/fiberX/v1/utils"
+	apiroute "github.com/ekbal41/fiberX/api/route"
+	"github.com/ekbal41/fiberX/detabase"
+	mainroute "github.com/ekbal41/fiberX/main/route"
+	"github.com/ekbal41/fiberX/utils"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/filesystem"
 	"github.com/gofiber/template/html"
@@ -23,7 +23,7 @@ func init() {
 
 //setupRoutes sets up all the routes for the application---->
 func setupRoutes(app *fiber.App) {
-	approute.Routes(app.Group("/"))
+	mainroute.Routes(app.Group("/"))
 	apiHome := app.Group("/api")
 	apiroute.Routes(apiHome.Group("/"))
 }

@@ -1,5 +1,5 @@
 project_name = fiber
-image_name = gofiber:latest
+image_name = fiberx:latest
 
 run-local:
 	go run app.go
@@ -7,24 +7,24 @@ run-local:
 tidy:
 	go mod tidy
 
-clean-packages:
+clean-mod:
 	go clean -modcache
 
-build:
+build-image:
 	docker build -t $(image_name) .
 
-build-no-cache:
+build-image-no-cache:
 	docker build --no-cache -t $(image_name) .
 
-up:
+start-container:
 	docker run -d -p 3000:3000 --name $(project_name) $(image_name) ./app
 
-up-prod:
+start-container-prod:
 	make stop
 	make rmv
 	docker run -d -p 3000:3000 --name $(project_name) $(image_name) ./app -prod
 
-up-del:
+delete-container:
 	make stop
 	make rmv
 	

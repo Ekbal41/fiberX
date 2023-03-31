@@ -1,4 +1,4 @@
-module github.com/ekbal41/fiberX/v1
+module github.com/ekbal41/fiberX
 
 go 1.19
 
@@ -11,7 +11,7 @@ require (
 )
 
 require (
-	github.com/andybalholm/brotli v1.0.5 // indirect
+	github.com/andybalholm/brotli v1.0.5 // indirectR
 	github.com/fsnotify/fsnotify v1.6.0 // indirect
 	github.com/google/uuid v1.3.0 // indirect
 	github.com/hashicorp/hcl v1.0.0 // indirect

@@ -1,4 +1,4 @@
-# Building the binary of the App
+# Building the binary of the app
 FROM golang:1.19 AS build
 
 # `fiber` should be replaced with your project name

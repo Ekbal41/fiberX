@@ -1,7 +1,7 @@
-package approute
+package mainroute
 
 import (
-	apphandller "github.com/ekbal41/fiberX/v1/app/handler"
+	apphandller "github.com/ekbal41/fiberX/main/handler"
 	"github.com/gofiber/fiber/v2"
 )
 
