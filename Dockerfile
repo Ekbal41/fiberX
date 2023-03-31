@@ -1,7 +1,7 @@
-# Building the binary of the app
+# Building the binary of the App
 FROM golang:1.19 AS build
 
-# `fiber` should be replaced with your project name
+# `boilerplate` should be replaced with your project name
 WORKDIR /go/src/fiber
 
 # Copy all the Code and stuff to compile everything
@@ -23,8 +23,11 @@ WORKDIR /app
 RUN mkdir ./static
 COPY ./static ./static
 
+# copy .env file to roo dir
+COPY .env .
 
-# `fiber` should be replaced here as well
+
+# `boilerplate` should be replaced here as well
 COPY --from=build /go/src/fiber/app .
 
 # Add packages
