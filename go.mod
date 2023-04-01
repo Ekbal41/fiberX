@@ -11,6 +11,12 @@ require (
 )
 
 require (
+	github.com/canthefason/go-watcher v0.2.4 // indirect
+	github.com/fatih/color v1.13.0 // indirect
+	gopkg.in/fsnotify.v1 v1.4.7 // indirect
+)
+
+require (
 	github.com/andybalholm/brotli v1.0.5 // indirectR
 	github.com/fsnotify/fsnotify v1.6.0 // indirect
 	github.com/google/uuid v1.3.0 // indirect
